@@ -17,7 +17,7 @@ deploy:
   region: "eu-central-1"
   app: "simpleweb"
   env: "simpleweb-env"
-  bucket_path: "docker-react"
+  bucket_path: "simpleweb"
   bucket: "elasticbeanstalk-eu-central-1-675742442195"
   on:
     branch: master
