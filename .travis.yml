@@ -9,3 +9,15 @@ before_install:
 script:
   - docker run -e CI=true a6596509538/simpleweb:latest.dev pwd
 
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: "eu-central-1"
+  app: "docker-react"
+  env: "DockerReact-env"
+  bucket_path: "docker-react"
+  bucket: "elasticbeanstalk-eu-central-1-675742442195"
+  on:
+    branch: master
