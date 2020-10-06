@@ -15,8 +15,8 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "eu-central-1"
-  app: "docker-react"
-  env: "DockerReact-env"
+  app: "simpleweb"
+  env: "simpleweb-env"
   bucket_path: "docker-react"
   bucket: "elasticbeanstalk-eu-central-1-675742442195"
   on:
